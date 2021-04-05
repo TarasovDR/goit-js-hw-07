@@ -17,11 +17,12 @@ const images = [
 ];
 
 const imagesRef = document.querySelector('#gallery');
+imagesRef.classList.add('images__list');
 
 const imagesTemplate = ({ url, alt }) => {
   return `
   <li class = "images__item">
-    <img src=${url} alt=${alt} class = "image">
+    <img src = ${url} alt=${alt} class = "image">
   </li>`;
 };
 
